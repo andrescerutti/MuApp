@@ -1,0 +1,9 @@
+<h1>Todas las publicaciones</h1>
+
+<% @publications.each do |publication| %>
+
+  <h2><%= link_to publication.categoria, publication_path(publication) %></h2>
+  <p><%= publication.cantidad %></p>
+  <p><%= publication.raza %></p>
+  <%= link_to "eliminar una publicacion", publication_path(publication), method: :delete %>
+<% end %>

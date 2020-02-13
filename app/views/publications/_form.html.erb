@@ -1,0 +1,9 @@
+<%= form_for @publication do |f| %>
+    <%= f.label :categoria, "ingrese una categoria" %>
+    <%= f.text_field :categoria %>
+    <%= f.label :cantidad, "ingrese una cantidad de animales" %>
+    <%= f.text_field :cantidad %>
+    <%= f.label :raza, "indique la raza de los animales" %>
+    <%= f.text_field :raza %>
+    <%= f.submit %>
+<% end %>
