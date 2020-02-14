@@ -5,5 +5,11 @@
   <h2><%= link_to publication.categoria, publication_path(publication) %></h2>
   <p><%= publication.cantidad %></p>
   <p><%= publication.raza %></p>
+  <p><%= publication.oferta %></p>
+  <p><%= publication.demanda %></p>
+  <%= link_to "editar una publicacion", edit_publication_path(publication) %>
   <%= link_to "eliminar una publicacion", publication_path(publication), method: :delete %>
+  <p>------------</p>
+  <%= link_to "nueva publicacion", new_publication_path %>
+
 <% end %>

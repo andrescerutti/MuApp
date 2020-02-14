@@ -1,0 +1,7 @@
+<h1>Demandas</h1>
+
+<ul>
+  <% @demandas.each do |publication| %>
+    <li><%= publication.categoria %> (<%= publication.cantidad %>)</li>
+  <% end %>
+</ul>

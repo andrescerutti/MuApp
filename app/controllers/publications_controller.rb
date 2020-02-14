@@ -2,6 +2,14 @@ class PublicationsController < ApplicationController
 
   before_action :set_publication, only: [:show, :edit, :update, :destroy]
 
+  def ofertas
+    @ofertas = Publication.where(oferta: 1)
+  end
+
+  def demandas
+    @demandas = Publication.where(demanda: 1)
+  end
+
   def index
     @publications = Publication.all
   end
@@ -34,7 +42,7 @@ class PublicationsController < ApplicationController
   private
 
   def publication_params
-    params.require(:publication).permit(:categoria, :cantidad, :raza)
+    params.require(:publication).permit(:categoria, :cantidad, :raza, :oferta, :demanda)
   end
 
   def set_publication
