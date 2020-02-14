@@ -1,7 +1,19 @@
-<h1>Ofertas</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
 
-<ul>
-  <% @ofertas.each do |publication| %>
-    <li><%= publication.categoria %> (<%= publication.cantidad %>)</li>
-  <% end %>
-</ul>
+    <h1>Ofertas</h1>
+    <ul>
+      <% @ofertas.each do |publication| %>
+        <li><h2>Categoria: <%= link_to publication.categoria, publication_path(publication) %></h2>
+        <p>Cantidad: <%= publication.cantidad %></p>
+        <p>Raza: <%= publication.raza %></p></li>
+      <% end %>
+    </ul>
+
+    <%= link_to "Nueva publicacion", new_publication_path %>
+    </div>
+  </div>
+</div>
+
+

@@ -1,8 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+      <h2>Categoria: <%= @publication.categoria %></h2>
+      <p>Cantidad: <%= @publication.cantidad %></p>
+      <p>Raza: <%= @publication.raza %></p>
+
+      <%= link_to "Volver a todas las publicaciones", publications_path %>
+
+    </div>
+  </div>
+</div>
 
 
-
-<h1><%= @publication.categoria %></h1>
-<p><%= @publication.cantidad %></p>
-<p><%= @publication.raza %></p>
-
-<%= link_to "volver a todas las publicaciones", publications_path %>

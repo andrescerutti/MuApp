@@ -1,13 +1,18 @@
-<%= form_for @publication do |f| %>
-    <%= f.label :categoria, "ingrese una categoria" %>
-    <%= f.text_field :categoria %>
-    <%= f.label :cantidad, "ingrese una cantidad de animales" %>
-    <%= f.text_field :cantidad %>
-    <%= f.label :raza, "indique la raza de los animales" %>
-    <%= f.text_field :raza %>
-    <%= f.label :oferta, "1 si es oferta" %>
-    <%= f.text_field :oferta %>
-    <%= f.label :demanda, "1 si es oferta" %>
-    <%= f.text_field :demanda %>
-    <%= f.submit %>
-<% end %>
+
+<div class="form">
+  <%= form_for @publication do |f| %>
+      <p><%= f.label :categoria, "Categoria" %>
+      <%= f.text_field :categoria %></p>
+      <p><%= f.label :cantidad, "Cantidad" %>
+      <%= f.text_field :cantidad %></p>
+      <p><%= f.label :raza, "Raza" %>
+      <%= f.text_field :oferta %></p>
+      <p>completa con 1 el que corresponda</p>
+      <p><%= f.label :oferta, "Oferta" %>
+      <%= f.text_field :oferta %></p>
+      <p><%= f.label :demanda, "Demanda" %>
+      <%= f.text_field :demanda %></p>
+      <%= f.submit %>
+
+  <% end %>
+</div>

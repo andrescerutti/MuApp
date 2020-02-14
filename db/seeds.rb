@@ -4,9 +4,9 @@ puts "Destruyendo publicaciones"
 Publication.destroy_all
 
 puts "Creando publicaciones"
-pub1 = Publication.create!(categoria: "vaca", cantidad: "3", raza: "holando", demanda: 1, oferta: 0)
-pub2 = Publication.create!(categoria: "nobillo", cantidad: "39", raza: "overa", demanda: 0, oferta: 1)
-pub3 = Publication.create!(categoria: "ternero", cantidad: "33", raza: "argentina", demanda: 1, oferta: 0)
+pub1 = Publication.create!(categoria: "Vaquillonas", cantidad: "110", raza: "Aberdeen Angus Negro", demanda: 1, oferta: 0)
+pub2 = Publication.create!(categoria: "Nobillo", cantidad: "70", raza: "Braford", demanda: 0, oferta: 1)
+pub3 = Publication.create!(categoria: "Ternero", cantidad: "65", raza: "Aberdeen Angus Colorado", demanda: 1, oferta: 0)
 
 puts "Creando operaciones"
 
